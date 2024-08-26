@@ -15,7 +15,8 @@ registry_base="registry.cn-hangzhou.aliyuncs.com/chy-sci"
 
 # Push images
 push_image "ros:noetic-zsh" "$registry_base/ros:noetic-zsh"
-push_image "ros:noetic-zsh-nvidia" "$registry_base/ros:noetic-zsh-nvidia"
-push_image "ros:noetic-zsh-nvidia-cuda" "$registry_base/ros:noetic-zsh-nvidia-cuda"
+push_image "ros:noetic-zsh-pytorch" "$registry_base/ros:noetic-zsh-pytorch"
+push_image "ros:noetic-zsh-cuda" "$registry_base/ros:noetic-zsh-cuda"
+push_image "ros:noetic-zsh-cuda-pytorch" "$registry_base/ros:noetic-zsh-cuda-pytorch"
 
 echo "All images have been pushed."

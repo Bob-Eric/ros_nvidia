@@ -15,7 +15,8 @@ registry_base="registry.cn-hangzhou.aliyuncs.com/chy-sci"
 
 # Pull images
 pull_image "ros:noetic-zsh" "$registry_base/ros:noetic-zsh"
-pull_image "ros:noetic-zsh-nvidia" "$registry_base/ros:noetic-zsh-nvidia"
-pull_image "ros:noetic-zsh-nvidia-cuda" "$registry_base/ros:noetic-zsh-nvidia-cuda"
+pull_image "ros:noetic-zsh-pytorch" "$registry_base/ros:noetic-zsh-pytorch"
+pull_image "ros:noetic-zsh-cuda" "$registry_base/ros:noetic-zsh-cuda"
+pull_image "ros:noetic-zsh-cuda-pytorch" "$registry_base/ros:noetic-zsh-cuda-pytorch"
 
 echo "All images have been pulled."
