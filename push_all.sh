@@ -2,12 +2,12 @@
 
 # Function to tag and push Docker images
 push_image() {
-    local image=$1
-    local registry=$2
+  local image=$1
+  local registry=$2
 
-    echo "Tagging and pushing $image to $registry..."
-    docker tag $image $registry
-    docker push $registry
+  echo "Tagging and pushing $image to $registry..."
+  docker tag $image $registry
+  docker push $registry
 }
 
 # Define the registry base URL
@@ -20,3 +20,4 @@ push_image "ros:noetic-zsh-cuda" "$registry_base/ros:noetic-zsh-cuda"
 push_image "ros:noetic-zsh-cuda-pytorch" "$registry_base/ros:noetic-zsh-cuda-pytorch"
 
 echo "All images have been pushed."
+
